@@ -1,0 +1,212 @@
+html, body, header, .bg-img-container
+{
+    font-family: Verdana, sans-serif;
+    height: 100%;
+}
+.bg-img-container
+{
+    color: white;
+    width: 100%;
+    background: url(../IMG/background.jpg) no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+}
+.welcome-text
+{
+    margin-top: 60px;
+}
+.button-play
+{
+    border: 3px white solid;
+    margin-top: 30px;
+    font-size: 150%;
+    height: 70px;
+    width: 30%;
+    background: none;
+    border-radius: 5px;
+    color: white;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    transition: 0.5s;
+    overflow: hidden;
+}
+.button-play:focus
+{
+    outline: none;
+}
+.button-play:before
+{
+    content: '';
+    display: block;
+    position: absolute;
+    background-color: rgba(255,255,255,0.9);
+    width: 60px;
+    height: 100%;
+    left: 0;
+    top: 0;
+    opacity: 0.5;
+    filter: blur(30px);
+    transform: translate(-130px) skewX(-15deg);
+}
+.button-play:after
+{
+    content: '';
+    display: block;
+    position: absolute;
+    background-color: rgba(255,255,255,0.9);
+    width: 30px;
+    height: 100%;
+    left: 30px;
+    top: 0;
+    opacity: 0;
+    filter: blur(30px);
+    transform: translate(-100px) scaleX(15);
+}
+.button-play:hover
+{
+    cursor: pointer;
+    background: #45526e;
+}
+.button-play:hover:before
+{
+    transform: translate(300px) skewX(-15deg);
+    opacity: 0.6;
+    transition: 1.5s;
+}
+.button-play:hover:after
+{
+    transform: translate(300px) skewX(-15deg);
+    opacity: 1;
+    transition: 1.5s;
+}
+a
+{
+    color: black;
+}
+.menu-list a
+{
+    position: relative;
+    padding: 5px;
+}
+.menu-list a:before,
+.menu-list a:after
+{
+    position: absolute;
+    height: 14px;
+    width: 14px;
+    content: '';
+    transition: all 0.5s ease;
+    opacity: 0;
+}
+.menu-list a:before
+{
+    top: 0;
+    right: 0;
+    border-top: solid 3px red;
+    border-right: solid 3px red;
+    transform: translate(-100%,50%);
+}
+.menu-list a:after
+{
+    bottom: 0;
+    left: 0;
+    border-bottom: solid 3px red;
+    border-left: solid 3px red;
+    transform: translate(100%,-50%);
+}
+a:hover:before,
+a:hover:after
+{
+    transform: translate(0%,0%);
+    opacity: 1;
+}
+.about-cover,
+.help-cover
+{
+    background: #FFF;
+}
+.about-img
+{
+    border: 3px black solid;
+    min-height: 200px;
+    max-height: 200px;
+    min-width: 200px;
+    max-width: 200px;
+    background: url("../IMG/economy.jpg") no-repeat;
+    background-size: cover;
+    border-radius: 200px;
+}
+.team-cover,
+.footer-cover
+{
+    background: #00e25b;
+}
+.person-card
+{
+    margin: 0;
+    min-height: 300px;
+    min-width: 300px;
+    border: 3px solid black;
+    background: #4A6E89;
+    border-radius: 20px;
+}
+.person-description,
+.break-line
+{
+    border: 2px black solid;
+    background: #D5A86C;
+    border-radius: 10px;
+}
+.person-photo img
+{
+    min-width: 250px;
+    max-width: 250px;
+    min-height: 250px;
+    max-height: 250px;
+    border-radius: 20px;
+}
+.button-person
+{
+    width: 100%;
+    border-radius: 10px;
+    border: 2px black solid;
+    background: #00b0ff;
+    transition: all 1s;
+    position: relative;
+}
+.button-person:before,
+.button-person:after
+{
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    color: #FFF;
+    opacity: 0;
+    transition: all 1s;
+}
+.button-person:before
+{
+    top: 0;
+    left: 35px;
+    content: '>';
+    transform: translate(150%,0%);
+}
+.button-person:after
+{
+    top: 0;
+    right: 35px;
+    content: '<';
+    transform: translate(-150%,0%);
+}
+.button-person:hover:before,
+.button-person:hover:after
+{
+    transform: translate(0%,0%);
+    opacity: 1;
+}
+.button-person:hover
+{
+    background: #0b51c5;
+    color:red
+}
