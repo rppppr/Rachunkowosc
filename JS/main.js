@@ -1,11 +1,15 @@
 $(document).ready(function ()
 {
-    $('window').ready(function ()
+    //przywiązanie do wszyskitch leemetnów listy
+    var allLinks = $('li a');
+
+    $(allLinks).click(function ()
     {
-        var allLinks = $('li a');
-        for(var i = 0 ; i < allLinks.length; i++)
-        {
-            console.log(allLinks[i]);
-        }
+        var target = $(this);
+        var scroll = $(target.attr('href'));
+            $('html, body').animate(
+                {
+                    scrollTop: scroll.offset().top - 70
+                }, 1000);
     });
 });

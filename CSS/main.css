@@ -3,6 +3,9 @@ html, body, header, .bg-img-container
     font-family: Verdana, sans-serif;
     height: 100%;
 }
+.noscroll,.noscroll body{
+    overflow:hidden;
+}
 .bg-img-container
 {
     color: white;
@@ -126,7 +129,8 @@ a:hover:after
 {
     background: #FFF;
 }
-.about-img
+.about-img,
+.ue-logo
 {
     border: 3px black solid;
     min-height: 200px;
@@ -136,6 +140,11 @@ a:hover:after
     background: url("../IMG/economy.jpg") no-repeat;
     background-size: cover;
     border-radius: 200px;
+}
+.ue-logo
+{
+    left: 90px;
+    bottom: 20px
 }
 .team-cover,
 .footer-cover
