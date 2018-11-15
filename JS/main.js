@@ -1,3 +1,35 @@
+//definicja klasy Questions and Answers, przechowującej dane na temat pytań i odpowiedzi pobranych z bazy danych
+//klasa jako parametry przyjmuje:
+//typ int
+//typ typ string 5x z rzędu
+class QA
+{
+
+    constructor(nr,tresc,odpA,odpB,odpC,odpD)
+    {
+        this.nr = nr;
+        this.tresc = tresc;
+        this.odpA = odpA;
+        this.odpB = odpB;
+        this.odpC = odpC;
+        this.odpD = odpD;
+    }
+    get nr() { return this.nr; }
+    get tresc() { return this.tresc; }
+    get odpA() { return this.odpA; }
+    get odpB() { return this.odpB; }
+    get odpC() { return this.odpC; }
+    get odpD() { return this.odpD; }
+    set nr(nr) { this.nr = nr; }
+    set tresc(tresc) { this.tresc = tresc; }
+    set odpA(odpA) { this.odpA = odpA; }
+    set odpA(odpB) { this.odpB = odpB; }
+    set odpA(odpC) { this.odpC = odpC; }
+    set odpA(odpD) { this.odpD = odpD; }
+}
+//test powyższej klasy, bez dostępu do bazy danych
+
+
 function Pytania(nr,tresc,odpA,odpB,odpC,odpD)
 {
     this.nr = nr;
@@ -8,7 +40,7 @@ function Pytania(nr,tresc,odpA,odpB,odpC,odpD)
     this.odpD = odpD;
 }
 
-/*function StworzTablicePytan()
+function StworzTablicePytan()
 {
     //zmienna tablicowa przychowująca wszystkie pytania i odpowiedzi znajdujące się w bazie, jako obiekty klasy Pytania
     var pytania = {};
@@ -17,21 +49,9 @@ function Pytania(nr,tresc,odpA,odpB,odpC,odpD)
     {
         pytania[i] = new Pytania(i, i + " tresc pytania " + i, "odp A " + i, "odp B " + i, "odp C " + i, "odp D " + i);
     }
-    var i = pytania.length;
+    var j = pytania.length;
     var przechowaj, losuj;
 
-    //pętla, w której mieszamy wartości tak długo, jak są jeszcze jakieś elementy w tablicy
-    while (i !== 0)
-    {
-        //losujemy z calego zakresu tablicy
-        losuj = Math.floor(Math.random() * i);
-        i -= 1;
-
-        //zamieniamy z elementem o indeksie i
-        przechowaj = pytania[i];
-        pytania[i] = pytania[losuj];
-        pytania[losuj] = losuj;
-    }
     //zwracamy tablicę wszystkich pytań, ułożonych w losowej kolejności
     return pytania;
 }
@@ -52,7 +72,7 @@ function LosujPytaniaDoTestu()
     //zwracamy zmienną tablicową, już z konkretnymi wartościami, aby następnie móc wykorzystać funckję jako wartość zmiennej
     return tablicaLosowychPytan;
 }
-*/
+
 $(document).ready(function ()
 {
     //przywiązanie do wszyskitch leemetnów listy
@@ -68,7 +88,7 @@ $(document).ready(function ()
                 }, 1000);
     });
 });
-/*//zmienna pomocnicza, odpowiadająca za indeks pytań wylosowanych poniżej
+//zmienna pomocnicza, odpowiadająca za indeks pytań wylosowanych poniżej
 var nrPytania = 1;
 //zmienna tablicowa która zawiera wszystkie wylosowane do testu pytania
 var pytaniaDoTestu = LosujPytaniaDoTestu();
@@ -99,4 +119,4 @@ $(".poprzednie").click(function ()
     $(".odp-C").text(pytaniaDoTestu[nrPytania].odpC);
     $(".odp-D").text(pytaniaDoTestu[nrPytania].odpD);
     $(".nr-pytania").text(nrPytania + "/20");
-});*/
+});
