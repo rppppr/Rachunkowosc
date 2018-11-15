@@ -3,9 +3,6 @@ html, body, header, .bg-img-container
     font-family: Verdana, sans-serif;
     height: 100%;
 }
-.noscroll,.noscroll body{
-    overflow:hidden;
-}
 .bg-img-container
 {
     color: white;
@@ -153,6 +150,7 @@ a:hover:after
 }
 .person-card
 {
+    left: 0;
     margin: 0;
     min-height: 300px;
     min-width: 300px;
@@ -218,4 +216,35 @@ a:hover:after
 {
     background: #0b51c5;
     color:red
+}
+.full-screen-slider
+{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.pytanie,
+.odpowiedz,
+.panel-sterowania
+{
+    color: black;
+    text-align: center;
+    min-width: 200px;
+    min-height: 50px;
+    background-color: white;
+    border: 3px black solid;
+    border-radius: 2%;
+    transition: background-color 1s;
+}
+.pytanie
+{
+    max-height: 1250px;
+}
+.odpowiedz
+{
+    max-height: 635px;
+}
+.odpowiedz:hover
+{
+    background-color: #00e25b;
 }
