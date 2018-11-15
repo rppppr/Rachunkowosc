@@ -8,7 +8,7 @@ function Pytania(nr,tresc,odpA,odpB,odpC,odpD)
     this.odpD = odpD;
 }
 
-function StworzTablicePytan()
+/*function StworzTablicePytan()
 {
     //zmienna tablicowa przychowująca wszystkie pytania i odpowiedzi znajdujące się w bazie, jako obiekty klasy Pytania
     var pytania = {};
@@ -52,7 +52,7 @@ function LosujPytaniaDoTestu()
     //zwracamy zmienną tablicową, już z konkretnymi wartościami, aby następnie móc wykorzystać funckję jako wartość zmiennej
     return tablicaLosowychPytan;
 }
-
+*/
 $(document).ready(function ()
 {
     //przywiązanie do wszyskitch leemetnów listy
@@ -68,7 +68,7 @@ $(document).ready(function ()
                 }, 1000);
     });
 });
-//zmienna pomocnicza, odpowiadająca za indeks pytań wylosowanych poniżej
+/*//zmienna pomocnicza, odpowiadająca za indeks pytań wylosowanych poniżej
 var nrPytania = 1;
 //zmienna tablicowa która zawiera wszystkie wylosowane do testu pytania
 var pytaniaDoTestu = LosujPytaniaDoTestu();
@@ -99,4 +99,4 @@ $(".poprzednie").click(function ()
     $(".odp-C").text(pytaniaDoTestu[nrPytania].odpC);
     $(".odp-D").text(pytaniaDoTestu[nrPytania].odpD);
     $(".nr-pytania").text(nrPytania + "/20");
-});
+});*/
