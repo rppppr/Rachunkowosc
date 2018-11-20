@@ -14,7 +14,7 @@ $(document).ready(function ()
             }, 1000);
     });
 });
-
+//klasa Pytania przyjmuje jako argumenty konstruktora typy NUMBER(INT), a następnie 5x pod rząd String
 function Pytania(nr,tresc,odpA,odpB,odpC,odpD)
 {
     this.nr = nr;
@@ -32,7 +32,8 @@ function StworzTablicePytan()
     //pętla, która indeksom zmiennej pytania, na podstawie "var i" przypisuje poszczególne wartości, z bazy danych
     for(var i = 0 ; i < 40 ; i++)
     {
-        pytania[i] = new Pytania((i+1), (i+1) + " tresc pytania " + (i+1), "odp A " + (i+1), "odp B " + (i+1), "odp C " + (i+1), "odp D " + (i+1));
+        pytania[i] = new Pytania((i+1), (i+1) + " tresc pytania " + (i+1), "odp A "
+                     + (i+1), "odp B " + (i+1), "odp C " + (i+1), "odp D " + (i+1));
     }
     //zwracamy tablicę wszystkich pytań, ułożonych w losowej kolejności
     return pytania;
@@ -44,16 +45,20 @@ function LosujPytaniaDoTestu()
     ////var tablicaLosowychPytan = [];
     //zmienna tablicowa, zawierająca wszystkie pytania z bazy danych
     var tablicaWszystkichPytan = StworzTablicePytan();
-    //pętla, która wykonuje się tyle razy, ile jest pytań w teście
+    //zmienne pomocnicze do poniższej pętli
     var losuj,losowePytanie;
-    for(let i = tablicaWszystkichPytan.length; i > 20 ; i--)
+    //pętla losuje PRZY ZAŁOŻENIU ŻE PYTAN JEST 40, dokładnie 20 pytań
+    for(let i = tablicaWszystkichPytan.length - 1; i > 20 ; i--)
     {
-
+        //losowo wybieramy indeks z dostępnego jeszcze zakresu (dekrementujemy wartość i w każdym obiegu pętli, aby uniknąć kopii)
         losuj = Math.floor(Math.random() * i);
+        //do zmiennej pomocniczej przypisujemy wartość atualnie wczytanego pytania
         losowePytanie = tablicaWszystkichPytan[i];
+        //do aktualnego indeksu tablicy, przypisujemy wylosowane pytanie
         tablicaWszystkichPytan[i] = tablicaWszystkichPytan[losuj];
+        //dla uniknięcia kopii, przypisujemy aktualnie wczytanego pytania do losowego indeksu, następnie nastąpi dekrementacja, co uniemożliwi
+        //ponowne wylosowanie tego samego pytania
         tablicaWszystkichPytan[losuj] = losowePytanie;
-        console.log(tablicaWszystkichPytan[i] + typeof(i));
     }
     //zwracamy zmienną tablicową, już z konkretnymi wartościami, aby następnie móc wykorzystać funckję jako wartość zmiennej
     return tablicaWszystkichPytan;
