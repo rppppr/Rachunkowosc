@@ -7,6 +7,7 @@ $(document).ready(function ()
     {
         var target = $(this);
         var scroll = $(target.attr('href'));
+        $('html, body').stop(true);
         $('html, body').animate(
             {
                 scrollTop: scroll.offset().top - 70
