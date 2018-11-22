@@ -154,6 +154,7 @@ a:hover:after
 
 .person-card
 {
+    left: 0;
     margin: 0;
     min-height: 420px;
     min-width: 300px;
@@ -233,4 +234,31 @@ a:hover:after
     margin: 0;
     background: #4A6E89;
     display: none;
+}
+.full-screen-slider
+{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.pytanie,
+.odpowiedz,
+.panel-sterowania
+{
+    color: black;
+    text-align: center;
+    min-width: 200px;
+    min-height: 50px;
+    background-color: white;
+    border: 3px black solid;
+    border-radius: 2%;
+    transition: background-color 1s;
+}
+.pytanie
+{
+    max-height: 1250px;
+}
+.odpowiedz:hover
+{
+    background-color: #00e25b;
 }
