@@ -3,6 +3,9 @@ html, body, header, .bg-img-container
     font-family: Verdana, sans-serif;
     height: 100%;
 }
+.noscroll,.noscroll body{
+    overflow:hidden;
+}
 .bg-img-container
 {
     color: white;
@@ -148,10 +151,11 @@ a:hover:after
 {
     background: #00e25b;
 }
+
 .person-card
 {
     margin: 0;
-    min-height: 300px;
+    min-height: 420px;
     min-width: 300px;
     border: 3px solid black;
     background: #4A6E89;
@@ -180,6 +184,7 @@ a:hover:after
     background: #00b0ff;
     transition: all 1s;
     position: relative;
+    cursor: pointer;
 }
 .button-person:before,
 .button-person:after
@@ -215,4 +220,17 @@ a:hover:after
 {
     background: #0b51c5;
     color:red
+}
+.slide.active
+{
+    margin: 0;
+    background: #4A6E89;
+    display: block;
+    position: relative;
+}
+.slide
+{
+    margin: 0;
+    background: #4A6E89;
+    display: none;
 }
