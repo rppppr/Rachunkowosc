@@ -154,7 +154,6 @@ a:hover:after
 
 .person-card
 {
-    left: 0;
     margin: 0;
     min-height: 420px;
     min-width: 300px;
@@ -235,6 +234,7 @@ a:hover:after
     background: #4A6E89;
     display: none;
 }
+
 .full-screen-slider
 {
     background-size: cover;
