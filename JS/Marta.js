@@ -8,7 +8,7 @@ $(document).ready(function ()
         mobile: true,
         easing   : 'linear',
     });
-    sr.reveal('h1, h2, h4, p' , {
+    sr.reveal('h1, h2, p, .magic-text' , {
         reset: true,
         delay: 300,
         mobile: true,

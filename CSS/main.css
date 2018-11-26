@@ -151,7 +151,6 @@ a:hover:after
 {
     background: #00e25b;
 }
-
 .person-card
 {
     margin: 0;
@@ -160,6 +159,14 @@ a:hover:after
     border: 3px solid black;
     background: #4A6E89;
     border-radius: 20px;
+}
+.emptiness /*MK*/
+{
+    width: 5%;
+}
+.emptiness2  /*MK*/
+{
+    width: 10%;
 }
 .person-description,
 .break-line
@@ -221,14 +228,14 @@ a:hover:after
     background: #0b51c5;
     color:red
 }
-.slide.active
+.slideP.active
 {
     margin: 0;
     background: #4A6E89;
     display: block;
     position: relative;
 }
-.slide
+.slideP
 {
     margin: 0;
     background: #4A6E89;
@@ -261,4 +268,9 @@ a:hover:after
 .odpowiedz:hover
 {
     background-color: #00e25b;
+}
+.carousel-inner>.carousel-item {  /*MK*/
+    -webkit-transition: -webkit-transform 1.2s ease-in-out !important;
+    -o-transition: -o-transform 1.2s ease-in-out !important;
+    transition: transform 1.2s ease-in-out !important;
 }
