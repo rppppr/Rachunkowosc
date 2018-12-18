@@ -10,7 +10,7 @@ html, body, header, .bg-img-container
 {
     color: white;
     width: 100%;
-    background: url(../IMG/background.jpg) no-repeat;
+    background: url(https://scontent.fwaw5-1.fna.fbcdn.net/v/t1.0-9/45062820_2139478636301796_1487884225905426432_o.jpg?_nc_cat=111&_nc_ht=scontent.fwaw5-1.fna&oh=da5f5379c522459daba03d30aa0661f5&oe=5C7B5B7E) no-repeat;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -127,7 +127,8 @@ a:hover:after
 .about-cover,
 .help-cover
 {
-    background: #FFF;
+    background: #ededed;
+    height: auto;
 }
 .about-img,
 .ue-logo
@@ -149,15 +150,16 @@ a:hover:after
 .team-cover,
 .footer-cover
 {
-    background: #00e25b;
+    height: auto;
+    background: #18593f;
 }
 .person-card
 {
     margin: 0;
-    min-height: 420px;
+    min-height: 300px;
     min-width: 300px;
     border: 3px solid black;
-    background: #4A6E89;
+    background: #b2b7b5;
     border-radius: 20px;
 }
 .emptiness /*MK*/
@@ -172,15 +174,15 @@ a:hover:after
 .break-line
 {
     border: 2px black solid;
-    background: #D5A86C;
+    background: #7c9b8f;
     border-radius: 10px;
 }
 .person-photo img
 {
-    min-width: 250px;
-    max-width: 250px;
-    min-height: 250px;
-    max-height: 250px;
+    min-width: 150px;
+    max-width: 150px;
+    min-height: 150px;
+    max-height: 150px;
     border-radius: 20px;
 }
 .button-person
@@ -231,7 +233,7 @@ a:hover:after
 .slideP.active
 {
     margin: 0;
-    background: #4A6E89;
+    background: #b2b7b5;
     display: block;
     position: relative;
 }
