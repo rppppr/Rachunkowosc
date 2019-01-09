@@ -14,5 +14,17 @@ $(document).ready(function ()
         mobile: true,
         easing   : 'linear',
     });
-
 });
+
+
+//pojawiające się okienko z restartem po kliknięciu "Zakończ grę"
+
+function functionConfirmReset(msg, punkty) {
+    var confirmBox = $("#confirm");
+    confirmBox.find(".message").text(msg);
+    confirmBox.find(".restart").unbind().click(function() {
+        confirmBox.hide();
+    });
+    confirmBox.find(".restart").click(punkty);
+    confirmBox.show();
+}

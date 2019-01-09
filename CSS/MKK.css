@@ -1,0 +1,29 @@
+/* By Marta */
+
+/* 3 poniżej do wyskakującego okienka z Resetem gry */
+#confirm {
+    display: none;
+    background-color: #C0D9D9;
+    border: 3px solid #aaa;
+    position: fixed;
+    width: 350px;
+    left: 50%;
+    margin-left: -100px;
+    padding: 20px 20px 30px;
+    box-sizing: border-box;
+    text-align: center;
+}
+#confirm button {
+    background-color: #FFCCCC;
+    display: inline-block;
+    border-radius: 5px;
+    border: 1px solid #aaa;
+    padding: 12px 20px;
+    text-align: center;
+    width: 125px;
+    cursor: pointer;
+}
+#confirm .message {
+    text-align: center;
+    padding-bottom: 20px;
+}

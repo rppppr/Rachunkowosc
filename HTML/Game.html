@@ -9,10 +9,13 @@
     <link rel="stylesheet" type="text/css" href="../CSS/mdb.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="../CSS/main.css">
+    <link rel="stylesheet" type="text/css" href="../CSS/MKK.css">
     <script src="../JS/jquery-3.3.1.min.js"></script>
     <script src="../JS/popper.min.js"></script>
     <script src="../JS/bootstrap.min.js"></script>
     <script src="../JS/mdb.min.js"></script>
+    <script src="../JS/Marta.js"></script>
+
 </head>
 <body>
     <div id="Welcome" class="bg-img-container view">
@@ -34,6 +37,18 @@
                     <p></p>
                 </div>
                 <div class="col-12 panel-sterowania mt-5">
+
+                    <!-- Przycisk "Zakończ grę" z restartem (początek) MK -->
+                    <div id="confirm">  <!-- okienko które się pojawi -->
+                        <div class="message"></div>
+                        <button class="restart">Restart</button>
+                    </div>
+                         <!-- przycisk "Zakończ grę" -->
+                    <button onclick = 'functionConfirmReset("Twoja liczba punktów: (tu wyświetlane punkty) ", function zakoncz() {
+                         alert("Brak funkcji restartującej")      // usunąć alert i dodać funkcję która włącza grę od nowa
+                      });'>Zakończ grę</button>
+                    <!-- koniec okienka z Restartem -->
+
                     <button class="poprzednie"> < </button>
                     <p class="nr-pytania">-</p>
                     <button class="nastepne"> > </button>
