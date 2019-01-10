@@ -90,7 +90,7 @@ a
 .menu-list a
 {
     position: relative;
-    padding: 5px;
+    padding: px;
 }
 .menu-list a:before,
 .menu-list a:after
@@ -130,22 +130,27 @@ a:hover:after
     background: #ededed;
     height: auto;
 }
-.about-img,
-.ue-logo
+.help-img
 {
     border: 3px black solid;
     min-height: 200px;
     max-height: 200px;
     min-width: 200px;
     max-width: 200px;
-    background: url("../IMG/economy.jpg") no-repeat;
+    background: url("../IMG/help.png") no-repeat;
     background-size: cover;
-    border-radius: 200px;
+    border-radius: 50%;
 }
-.ue-logo
+.about-img
 {
-    left: 90px;
-    bottom: 20px
+    border: 3px black solid;
+    min-height: 200px;
+    max-height: 200px;
+    min-width: 200px;
+    max-width: 200px;
+    background: url("../IMG/about.png") no-repeat;
+    background-size: cover;
+    border-radius: 50%;
 }
 .team-cover,
 .footer-cover
