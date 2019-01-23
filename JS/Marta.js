@@ -8,23 +8,10 @@ $(document).ready(function ()
         mobile: true,
         easing   : 'linear',
     });
-    sr.reveal('h1, h2, p, .magic-text' , {
+    sr.reveal('h1, h2, h4, p' , {
         reset: true,
         delay: 300,
         mobile: true,
         easing   : 'linear',
     });
 });
-
-
-//pojawiające się okienko z restartem po kliknięciu "Zakończ grę"
-
-function functionConfirmReset(msg, punkty) {
-    var confirmBox = $("#confirm");
-    confirmBox.find(".message").text(msg);
-    confirmBox.find(".restart").unbind().click(function() {
-        confirmBox.hide();
-    });
-    confirmBox.find(".restart").click(punkty);
-    confirmBox.show();
-}

@@ -10,7 +10,7 @@ html, body, header, .bg-img-container
 {
     color: white;
     width: 100%;
-    background: url(https://scontent.fwaw5-1.fna.fbcdn.net/v/t1.0-9/45062820_2139478636301796_1487884225905426432_o.jpg?_nc_cat=111&_nc_ht=scontent.fwaw5-1.fna&oh=da5f5379c522459daba03d30aa0661f5&oe=5C7B5B7E) no-repeat;
+    background: url(../IMG/background.jpg) no-repeat;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -90,7 +90,7 @@ a
 .menu-list a
 {
     position: relative;
-    padding: px;
+    padding: 5px;
 }
 .menu-list a:before,
 .menu-list a:after
@@ -127,67 +127,36 @@ a:hover:after
 .about-cover,
 .help-cover
 {
-    background: #ededed;
-    height: auto;
-}
-.help-img
-{
-    border: 3px black solid;
-    min-height: 200px;
-    max-height: 200px;
-    min-width: 200px;
-    max-width: 200px;
-    background: url("../IMG/help.png") no-repeat;
-    background-size: cover;
-    border-radius: 50%;
-}
-.about-img
-{
-    border: 3px black solid;
-    min-height: 200px;
-    max-height: 200px;
-    min-width: 200px;
-    max-width: 200px;
-    background: url("../IMG/about.png") no-repeat;
-    background-size: cover;
-    border-radius: 50%;
+    background: #EDEDED;
 }
 .team-cover,
 .footer-cover
 {
-    height: auto;
-    background: #18593f;
+    background: #b2b7b5;
 }
 .person-card
 {
+    left: 0;
     margin: 0;
-    min-height: 300px;
+    min-height: 420px;
     min-width: 300px;
     border: 3px solid black;
-    background: #b2b7b5;
+    background: #4A6E89;
     border-radius: 20px;
-}
-.emptiness /*MK*/
-{
-    width: 5%;
-}
-.emptiness2  /*MK*/
-{
-    width: 10%;
 }
 .person-description,
 .break-line
 {
     border: 2px black solid;
-    background: #7c9b8f;
+    background: #D5A86C;
     border-radius: 10px;
 }
 .person-photo img
 {
-    min-width: 150px;
-    max-width: 150px;
-    min-height: 150px;
-    max-height: 150px;
+    min-width: 250px;
+    max-width: 250px;
+    min-height: 250px;
+    max-height: 250px;
     border-radius: 20px;
 }
 .button-person
@@ -235,20 +204,19 @@ a:hover:after
     background: #0b51c5;
     color:red
 }
-.slideP.active
+.slide.active
 {
     margin: 0;
-    background: #b2b7b5;
+    background: #4A6E89;
     display: block;
     position: relative;
 }
-.slideP
+.slide
 {
     margin: 0;
     background: #4A6E89;
     display: none;
 }
-
 .full-screen-slider
 {
     background-size: cover;
@@ -276,8 +244,30 @@ a:hover:after
 {
     background-color: #00e25b;
 }
-.carousel-inner>.carousel-item {  /*MK*/
-    -webkit-transition: -webkit-transform 1.2s ease-in-out !important;
-    -o-transition: -o-transform 1.2s ease-in-out !important;
-    transition: transform 1.2s ease-in-out !important;
+.zaznaczona
+{
+  background-color: green;
+}
+.about-image
+{
+    border: 3px black solid;
+    background: url("../IMG/about.png") no-repeat;
+    min-height: 200px;
+    max-height: 200px;
+    min-width: 200px;
+    max-width: 200px;
+    background-size: cover;
+    border-radius: 50%;
+}
+.help-img
+{
+    border: 3px black solid;
+    min-height: 200px;
+    max-height: 200px;
+    min-width: 200px;
+    max-width: 200px;
+    background: url("../IMG/help.png") no-repeat;
+    background-size: cover;
+    border-radius: 200px;
+    border-radius: 50%;
 }

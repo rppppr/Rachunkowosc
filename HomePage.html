@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Projekt rachunkowość - strona główna</title>
+
+    <link rel="stylesheet" type="text/css" href="CSS/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="CSS/mdb.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="CSS/main.css">
+    <script src="JS/jquery-3.3.1.min.js"></script>
+    <script src="JS/popper.min.js"></script>
+    <script src="JS/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="JS/mdb.min.js"></script>
+    <script src="JS/main.js"></script>
+    <script src="JS/Marta.js"></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
+            <a class="navbar-brand" href="HomePage.html">
+                <img src="IMG/logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
+                Rachunkowość
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-0 mr-sm-1 mr-md-2 menu-list">
+                    <li class="nav-item mx-2">
+                        <a href="#Welcome"><span><img src="IMG/start.png" width="30" height="30" class="d-inline-block align-top" alt=""></span>Start</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a href="#About"><img src="IMG/about.png" width="30" height="30" class="d-inline-block align-top" alt=""></span> O projekcie</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a href="#Team"><img src="IMG/members.png" width="30" height="30" class="d-inline-block align-top" alt=""></span>Członkowie</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a href="#Help"><img src="IMG/help.png" width="30" height="30" class="d-inline-block align-top" alt=""></span>Jak pomóc</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a href="#Contact"><img src="IMG/contact.png" width="30" height="30" class="d-inline-block align-top" alt=""></span>Kontakt</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div id="Welcome" class="bg-img-container view">
+            <div class="full-bg-img d-flex container-fluid align-items-center justify-content-center">
+                <div class="row d-flex justify-content-center">
+                    <div class="col-md-12 text-center">
+                        <h2 class="mb-4 font-weight-bold">
+                            Projekt na zajęcia "Podstawy rachunkowości i finansów"
+                        </h2>
+                        <hr class="hr-light">
+                        <h4 class="mt-4 magic-text">
+                            W ramach zajęć na które uczęszczamy, stworzyliśmy aplikację,
+                        </h4>
+                        <h4 class="mb-4 magic-text">
+                            która pozwoli Ci przetestować swoją wiedzę z zakresu podstaw ekonomii.
+                        </h4>
+                        <h4 class="mb-4 magic-text">
+                            Przekonaj się sam!
+                        </h4>
+						<form action="Game.php">
+							<button type="submit" class="button-play">
+								Zagraj
+							</button>
+						</form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container-fluid">
+            <section id="About">
+                <div class="row text-center justify-content-center align-items-center about-cover">
+                    <div class="col-12 my-4">
+                        <h1 class="text-center">
+							Nasz projekt pozwala sprawdzić swoją wiedzę w formie gry.
+                        </h1>
+                        <hr class="hr-dark">
+                    </div>
+                    <div class="col-12 about-image">
+
+                    </div>
+                    <div class="col-12 my-4">
+                        <p>
+                            Program losuje 20 pytań z bazy stworzonej na podstawie materiałów przekazywanych przez Panią dr Joannę Cichorską w trakcie kursu "Podstawy Rachunkowości i Finansów".
+                            Do tych materiałów należą zarówno udostępnione prezentacje, jak i komentarze, które padły w trakcie wykładów. Po zakończeniu testu punkty użytkownika zostaną podliczone.
+
+                        </p>
+                    </div>
+                    <div class="col-12 my-4">
+                        <p>
+                            Baza pytań może być modyfikowana według woli prowadzącego kurs.
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <section id="Team">
+                <div class="row text-center justify-content-center align-items-center team-cover pb-5">
+                    <div class="col-12 my-2">
+                        <h1 class="text-center">
+                            Zespół prezentuje się następująco:
+                        </h1>
+                    </div>
+                    <div class="col-6 col-md-3 my-1 mx-1 person-card">
+                        <div class="person-description my-2 pt-2">
+                            <h4>
+                                Rafał Stopka
+                            </h4>
+                        </div>
+                        <div class="slide active">
+                        <div class="person-photo">
+                            <img src="IMG/male.png">
+                        </div>
+                        <div class="break-line my-2 pt-2">
+                            <h4>
+                                Programista
+                            </h4>
+                        </div>
+                        <p class="button-person mb-2">
+                            Dowiedz się więcej
+                        </p>
+                        </div>
+                        <div class="slide">
+                          rafal.stopka@edu.uekat.pl <br>
+						  Moim zadaniem było programowanie PHP, JavaScript, stworzenie szablonu strony oraz zarządzanie projektem. <br>
+						  Stworzyłem system dodawania pytań do bazy danych i sprawdzania poprawności odpowiedzi.
+                          <p class="button-person mb-2">
+                              Wróć
+                          </p>
+                        </div>
+                    </div>
+
+                    <div class="col-6 col-md-3 my-1 mx-1 person-card">
+                        <div class="person-description my-2 pt-2">
+                            <h4>
+                                Paulina Krzeszowska
+                            </h4>
+                        </div>
+                        <div class="slide active">
+                        <div class="person-photo">
+                            <img src="IMG/female.jpg">
+                        </div>
+                        <div class="break-line my-2 pt-2">
+                            <h4>
+                                Grafik
+                            </h4>
+                        </div>
+                        <p class="button-person mb-2">
+                            Dowiedz się więcej
+                        </p>
+                        </div>
+                        <div class="slide">
+                          paulina.krzeszowska@edu.uekat.pl <br>
+						  W trakcie realizacji projektu zajmowałam się tworzeniem grafik oraz programowaniem <br>
+						  Wykonałam ikony widoczne na stronie oraz stworzyłam główną stronę zaplecza.
+                          <p class="button-person mb-2">
+                              Wróć
+                          </p>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3 my-1 mx-1 person-card">
+                        <div class="person-description my-2 pt-2">
+                            <h4>
+                                Marta Kleczko
+                            </h4>
+                        </div>
+                        <div class="slide active">
+                        <div class="person-photo">
+                            <img src="IMG/female.jpg">
+                        </div>
+                        <div class="break-line my-2 pt-2">
+                            <h4>
+                                Programista
+                            </h4>
+                        </div>
+                        <p class="button-person mb-2">
+                            Dowiedz się więcej
+                        </p>
+                        </div>
+                        <div class="slide">
+						  marta.kleczko@edu.uekat.pl <br>	
+						
+                          W projekcie zajmowałam się zadaniami związanymi z programowaniem JavaScript oraz PHP. <br>
+						  Wykonałam metody odpowiedzialne za usuwanie użytkowników,podliczanie punktów w teście oraz animacje na stronie głównej.
+						  
+                          <p class="button-person mb-2">
+                              Wróć
+                          </p>
+                        </div>
+                    </div>
+
+                    <div class="col-6 col-md-3 my-1 mx-1 person-card">
+                        <div class="person-description my-2 pt-2">
+                            <h4>
+                                Dominik Koziak
+                            </h4>
+                        </div>
+                        <div class="slide active">
+                        <div class="person-photo">
+                            <img src="IMG/male.png">
+                        </div>
+                        <div class="break-line my-2 pt-2">
+                            <h4>
+                                Grafik
+                            </h4>
+                        </div>
+                        <p class="button-person mb-2">
+                            Dowiedz się więcej
+                        </p>
+                        </div>
+                        <div class="slide">
+						  dominik.koziak@edu.uekat.pl <br>
+                          W projekcie zajmowałem się pracą nas szatą graficzną, wygladem niektórych elementów, pomniejszym programowaniem <br>
+						  Napisałem system pozwalający na edycję pytań tylko adminom oraz ich autorom.
+                          <p class="button-person mb-2">
+                              Wróć
+                          </p>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3 my-1 mx-1 person-card">
+                        <div class="person-description my-2 pt-2">
+                            <h4>
+                                Łukasz Suwaj
+                            </h4>
+                        </div>
+                        <div class="slide active">
+                        <div class="person-photo">
+                            <img src="IMG/male.png">
+                        </div>
+                        <div class="break-line my-2 pt-2">
+                            <h4>
+                                Programista
+                            </h4>
+                        </div>
+                        <p class="button-person mb-2">
+                            Dowiedz się więcej
+                        </p>
+                        </div>
+                        <div class="slide">
+                            lukasz.suwaj@edu.uekat.pl <br>
+							Zajmowałem się pisaniem skryptów w PHP oraz JavaScript. <br>
+							Moim zadaniem było umożliwienie edycji pytań oraz tworzenie animacji widocznych na stronie.
+						  <p class="button-person mb-2">
+                              Wróć
+                          </p>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3 my-1 mx-1 person-card">
+                        <div class="person-description my-2 pt-2">
+                            <h4>
+                                Przemysław Tabor
+                            </h4>
+                        </div>
+                        <div class="slide active">
+                        <div class="person-photo">
+                            <img src="IMG/male.png">
+                        </div>
+                        <div class="break-line my-2 pt-2">
+                            <h4>
+                                Programista
+                            </h4>
+                        </div>
+                        <p class="button-person mb-2">
+                            Dowiedz się więcej
+                        </p>
+                        </div>
+                        <div class="slide">
+                          przemyslaw.tabor@edu.uekat.pl <br> 
+						  Zajmowałem się programowanie JS oraz PHP. <br>
+						  Jestem odpowiedzialny za system logowania, losowania pytań do testu i obsługę kart personalnych.
+                          <p class="button-person mb-2">
+                              Wróć
+                          </p>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3 my-1 mx-1 person-card">
+                        <div class="person-description my-2 pt-2">
+                            <h4>
+                                Dr Joanna Cichorska
+                            </h4>
+                        </div>
+                        <div class="slide active">
+                        <div class="person-photo">
+                            <img src="IMG/female.jpg">
+                        </div>
+                        <div class="break-line my-2 pt-2">
+                            <h4>
+                                Opiekun projektu
+                            </h4>
+                        </div>
+                        <p class="button-person mb-2">
+                            Dowiedz się więcej
+                        </p>
+                        </div>
+                        <div class="slide">
+                          joanna.cichorska@ue.katowice.pl <br>
+						  W trakcie realizacji projektu pełnilam funkcję mentora i opiekuna.
+                          <p class="button-person mb-2">
+                              Wróć
+                          </p>
+                        </div>
+                    </div>
+                </div>
+</section>
+            <section id="Help">
+                <div class="row text-center justify-content-center align-items-center help-cover">
+                    <div class="col-12 my-4">
+                        <h1 class="text-center">
+                            Jak możecie nam pomóc?
+                        </h1>
+                    </div>
+                    <div class="col-12 my-4">
+                        <p>
+                            Przede wszystkim polećcie nas znajomym! Nie ma lepszej reklamy niż ta drogą pantoflową.
+                        </p>
+                        <p>
+							Zachęćcie swoich prowadzących do skorzystania z naszej gry - wprowadzania własnych pytań i sprawdzania wiedzy swoich uczniów lub studentów.
+                        </p>
+                        <p>
+                            Twórzcie własne bazy pytań i zachęcajcie znajomych do przechodzenia Waszych testów.
+                        </p>
+						<p>
+                            Jeśli masz jakieś sugestie, napisz do nas e-mail na adres pmldpr@gmail.com
+                        </p>
+                    </div>
+					<div class="col-12 col-md-2 my-4 help-img">
+
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer style="background: #3a3a3a;" id="Contact" class="page-footer  footer-cover pt-5">
+	
+        <div class="container-fluid " style="background: #5a5a5a;" >
+		
+		
+            <div class=" row align-items-start justify-content-between text-center py-3"  >
+			
+				
+				<div class="col-md-5"   >
+					<img src="IMG/footer-left.png"  width="100%"  >
+				</div>
+				
+				
+				<div class="col-12 col-md-2 text-center py-3 font-medium font-weight-bold" align="center" >
+					<span style=" display: inline-block; vertical-align: middle; line-height: normal;">
+						Projekt rachunkowość <br>
+						Uniwersytet Ekonomiczny w Katowicach<br>
+						ul. 1 Maja 50, 40-287 Katowice<br>
+						tel. +48 32 257 70 00
+					</span>
+					
+				</div>
+				
+				
+				<div class="col-md-5 " >
+					<img src="IMG/footer-right.png" width="100%"  >
+				</div>
+				
+
+            </div>
+        </div>
+        <div class=" text-center py-3 font-small ">© 2018 Copyright: PMLDPR
+        </div>
+    </footer>
+    <script src="JS/slider.js"></script>
+</body>
+</html>
